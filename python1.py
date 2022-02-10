@@ -2,6 +2,10 @@ name = input("Who are you?")
 name = name.strip().lower()
 if name == "oliver":
     print("Mine too!")
+elif name == "sam":
+    print("Thats the same name as my friend!")
+else:
+    print("Is that so!")
 birth_date = int(input("When where you born?"))
 age = 2022 - birth_date
 print("you will be {} years old this year!".format(age))
