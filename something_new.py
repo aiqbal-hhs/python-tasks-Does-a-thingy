@@ -8,8 +8,9 @@ for i in range(100):
     frank.lt(27)
     frank.fd(10)
     frank.lt(74)
-    frank.color(colors)
-for i in range(100):
+
+    
+for i in range(120):
     #Change colors
     if i == 20:
         frank.color('red')
@@ -20,7 +21,7 @@ for i in range(100):
     elif i == 80:
         frank.color('green')
     elif i == 100:
-        frank.color('')
+        frank.color('pink')
     #Draw the spirograph
     frank.forward(200)
     frank.left(184)
