@@ -80,12 +80,6 @@ for i in range(2):
     
 box.end_fill()
 
-# navigation is pick random
-# can you use turtle.Turtle() to control all of the turtles?
-# increase and decrease the number of turtles
-# make senary?, write on the screen?,
-# senary - most is pond, add log, add rock/s
-# make player involved -> choose attributes -> 
 c = True
 
 while x is False:
@@ -103,14 +97,11 @@ while x is False:
         ziggy.rt(50)
         ziggy.fd(20)
         ziggy.stamp()
-        if i >= 7:
-            ziggy.clearstamps(1)
         ziggy.lt(100)
         ziggy.fd(20)
         ziggy.stamp()
-        if i >= 7:
-            ziggy.clearstamps(1)
         ziggy.rt(50)
+        
         
         if i == 8:
             ziggy.rt(130)
