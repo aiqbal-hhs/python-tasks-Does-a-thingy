@@ -6,23 +6,16 @@ screen.title('Turtle livestream')
 screen.mode("logo")
 turtle.bgcolor('#238931')
 
-first = turtle.Turtle()
-box = first.clone()
-box.speed(11)
-first.speed(random.randint(1, 3))
-first.penup()
-first.fillcolor('#38C74B')
-first.shape("turtle")
-second = first.clone()
-ziggy = first.clone()
+ziggy = turtle.Turtle()
+box = ziggy.clone()
+box.speed(0)
+ziggy.penup()
+ziggy.shape("turtle")
 ziggy.speed(0)
 ziggy.fillcolor('blue')
 ziggy.goto(-50, 0)
 ziggy.pencolor('pink')
 x = False
-fangle = first.towards(0, 0)
-sangle = second.towards(0, 0)
-zangle = ziggy.towards(220, 150)
 
 box.penup()
 box.ht()
@@ -94,9 +87,6 @@ box.end_fill()
 # senary - most is pond, add log, add rock/s
 # make player involved -> choose attributes -> 
 c = True
-
-first.lt(random.randint(0, 359))
-second.lt(random.randint(0, 359))
 
 while x is False:
     while c is True:
