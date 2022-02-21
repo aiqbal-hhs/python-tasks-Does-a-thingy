@@ -138,6 +138,7 @@ while x is False:
         sangle == second.towards(0, 0)
         second.lt(sangle)
         second.fd(5)
+        
     first.fd(random.randint(0, 6))
     first.lt(random.randint(-40, 40))
     first.speed(random.randint(1, 2))

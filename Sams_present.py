@@ -94,6 +94,7 @@ while x is False:
         c = False
     
     for i in range(46):
+        
         ziggy.rt(50)
         ziggy.fd(20)
         ziggy.stamp()
