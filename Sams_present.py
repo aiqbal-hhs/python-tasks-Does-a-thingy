@@ -81,6 +81,7 @@ for i in range(2):
 box.end_fill()
 
 c = True
+s = 0
 
 while x is False:
     while c is True:
@@ -98,17 +99,17 @@ while x is False:
         ziggy.rt(50)
         ziggy.fd(20)
         ziggy.stamp()
-        if c is False:
+        if s == 5:
             ziggy.clearstamps(1)
-
         ziggy.lt(100)
         ziggy.fd(20)
         ziggy.stamp()
+        if s == 5:
+            ziggy.clearstamps(1)
         ziggy.rt(50)
 
-        if c is False:
-            ziggy.clearstamps(1)
-
+        if i == 3:
+            s = 5
         if i == 8:
             ziggy.rt(130)
         elif i == 22:
