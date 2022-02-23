@@ -16,6 +16,8 @@ ziggy.fillcolor('blue')
 ziggy.goto(-50, 0)
 ziggy.pencolor('pink')
 x = False
+b = 1
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 box.penup()
 box.ht()
@@ -81,7 +83,6 @@ for i in range(2):
 box.end_fill()
 
 c = True
-
 while x is False:
     while c is True:
         for i in range(5):
@@ -96,12 +97,16 @@ while x is False:
     for i in range(46):
         ziggy.rt(50)
         ziggy.fd(20)
+        ziggy.color(colors[b%7])
         ziggy.stamp()
         ziggy.lt(100)
         ziggy.fd(20)
+        b += 1
+        ziggy.color(colors[b%7])
         ziggy.stamp()
         ziggy.rt(50)
-        
+
+        b += 1
         if i == 8:
             ziggy.rt(130)
         elif i == 22:
